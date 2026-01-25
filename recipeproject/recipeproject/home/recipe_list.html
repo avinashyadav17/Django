@@ -1,0 +1,17 @@
+{% extends 'home/base.html' %}
+
+{% block content %}
+<h2>All Recipes</h2>
+
+<a href="{% url 'create_recipe' %}">+ Add Recipe</a>
+
+<ul>
+    {% for recipe in recipes %}
+        <li>{{ recipe.name }} - {{ recipe.description }}</li>
+    {% empty %}
+        <li>No recipes yet</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
+

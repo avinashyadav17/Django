@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     # Your apps
     'accounts',
     'home',
+    'vege',
 ]
 
 MIDDLEWARE = [
